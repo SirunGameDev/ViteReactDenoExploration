@@ -1,0 +1,18 @@
+services:
+  deno:
+    #user: ${UID}:${GID}
+    build: ./docker
+    image: vitereactdeno
+    restart: always
+    container_name: vitereactdeno
+    volumes:
+      - ./app/:/app
+    ports:
+      - 5173:5173
+    expose:
+      - 5173
+    tty: true
+    command:
+      - /bin/sh
+      - -c
+      - deno task dev --host
