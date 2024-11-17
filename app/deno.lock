@@ -1,6 +1,8 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@std/assert@*": "1.0.8",
+    "jsr:@std/internal@^1.0.5": "1.0.5",
     "npm:@eslint/js@^9.13.0": "9.15.0",
     "npm:@types/react-dom@^18.3.1": "18.3.1",
     "npm:@types/react@^18.3.12": "18.3.12",
@@ -14,6 +16,17 @@
     "npm:typescript-eslint@^8.11.0": "8.14.0_@typescript-eslint+parser@8.14.0__eslint@9.15.0__typescript@5.6.3_eslint@9.15.0_typescript@5.6.3",
     "npm:typescript@~5.6.2": "5.6.3",
     "npm:vite@^5.4.10": "5.4.11"
+  },
+  "jsr": {
+    "@std/assert@1.0.8": {
+      "integrity": "ebe0bd7eb488ee39686f77003992f389a06c3da1bbd8022184804852b2fa641b",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    }
   },
   "npm": {
     "@ampproject/remapping@2.3.0": {
